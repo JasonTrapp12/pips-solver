@@ -13,7 +13,7 @@ export const theme = createTheme({
 
     background: {
       default: "#fcf2f2", // app background
-      paper: "#dbc2b9",
+      paper: "rgba(240, 221, 214, 1)",
     },
 
     text: {
