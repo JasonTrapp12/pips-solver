@@ -7,11 +7,8 @@ import {
   checkGreaterThan,
   checkLessThan,
   checkNotEqual,
-  solve,
 } from "./Solver";
 import { v4 as uuidv4 } from "uuid";
-import test3 from "./testPuzzles/test3.json";
-import type { IGameState } from "./models/GameState";
 
 const makeCell = (value: number | null): ICell => ({
   on: true,
@@ -41,17 +38,17 @@ const test = (name: string, fn: () => boolean) => {
   }
 };
 
-const testAsync = async (
-  name: string,
-  fn: () => Promise<boolean> | boolean
-) => {
-  try {
-    const result = await fn();
-    console.log(`${result ? "✅" : "❌"} ${name}`);
-  } catch (e) {
-    console.log(`💥 ${name}`, e);
-  }
-};
+// const testAsync = async (
+//   name: string,
+//   fn: () => Promise<boolean> | boolean
+// ) => {
+//   try {
+//     const result = await fn();
+//     console.log(`${result ? "✅" : "❌"} ${name}`);
+//   } catch (e) {
+//     console.log(`💥 ${name}`, e);
+//   }
+// };
 
 test("checkEqual: partial group allowed during solve", () => {
   const group = makeGroup([1, null, null], "=");

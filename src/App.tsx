@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import "./App.css";
 import Board from "./components/puzzle/Board";
 import PhaseDisplay from "./components/puzzle/Phase";

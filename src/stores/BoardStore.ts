@@ -4,7 +4,6 @@ import { defaultGroup, type IGroup, type IRule } from "../models/Group";
 import { v4 as uuidv4 } from "uuid";
 import { getNextGroupColor } from "../hooks/GroupColors";
 import type { IDomino } from "../models/Domino";
-import { solve } from "../Solver";
 
 export const GRID_SIZE = 12;
 
@@ -60,8 +59,6 @@ export const useBoardStore = create<IBoardStore>((set) => ({
 
   toggleCell: (row, col) =>
     set((state) => {
-      const cell = state.cells[row][col];
-
       switch (state.phase) {
         case "Selecting Cells":
           const newCells = state.cells.map((r) => r.map((c) => ({ ...c })));

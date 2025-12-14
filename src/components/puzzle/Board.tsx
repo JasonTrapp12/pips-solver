@@ -1,4 +1,4 @@
-import { Box, Grid, Paper, useTheme } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 import Cell from "./Cell";
 import { useBoardStore } from "../../stores/BoardStore";
 import { useEffect, useRef } from "react";

@@ -1,11 +1,4 @@
-import {
-  AppBar,
-  Toolbar,
-  Box,
-  Typography,
-  Button,
-  useTheme,
-} from "@mui/material";
+import { AppBar, Toolbar, Box, Button, useTheme } from "@mui/material";
 import logo from "../../../src/assets/logo.png";
 import { useModalStore } from "../../stores/ModalStore";
 

@@ -1,19 +1,10 @@
 import { useBoardStore } from "../../stores/BoardStore";
-import {
-  Box,
-  Button,
-  Card,
-  Paper,
-  Stack,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import CreateRules from "./CreateRules";
 import CreateDominos from "./CreateDominos";
 
 const PhaseDisplay = () => {
   const { phase } = useBoardStore();
-  const theme = useTheme();
 
   const getMessageMapping = () => {
     switch (phase) {

@@ -4,7 +4,6 @@ import {
   TextField,
   Button,
   IconButton,
-  Typography,
   useTheme,
 } from "@mui/material";
 import { Add, Remove } from "@mui/icons-material";

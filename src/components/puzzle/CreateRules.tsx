@@ -1,17 +1,6 @@
-import {
-  Box,
-  Grid,
-  MenuItem,
-  Select,
-  Typography,
-  TextField,
-  Button,
-  useTheme,
-  Stack,
-} from "@mui/material";
+import { Box, Grid, MenuItem, Select, TextField, Stack } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import { useBoardStore } from "../../stores/BoardStore";
-import type { IRule } from "../../models/Group";
 import { useEffect } from "react";
 
 type FormValues = {
@@ -23,7 +12,6 @@ type FormValues = {
 };
 
 const CreateRules = () => {
-  const theme = useTheme();
   const { groups, setGroupRule, phase, nextRequested, completePhase } =
     useBoardStore();
   const { control, handleSubmit, register } = useForm<FormValues>({

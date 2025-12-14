@@ -1,4 +1,4 @@
-import { Button, Box, Typography, useTheme } from "@mui/material";
+import { Button, Box, useTheme } from "@mui/material";
 import { useBoardStore } from "../../stores/BoardStore";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import UndoIcon from "@mui/icons-material/Undo";
