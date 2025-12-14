@@ -3,6 +3,7 @@ import {
   DialogContent,
   DialogTitle,
   IconButton,
+  Link,
   Typography,
   useTheme,
 } from "@mui/material";
@@ -48,6 +49,15 @@ const AboutModal = () => {
         </Typography>
         <Typography variant="h6" fontWeight={600}>
           Github:{" "}
+          <Link
+            href="https://github.com/JasonTrapp12/pips-solver"
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="hover"
+            color={theme.palette.info.main}
+          >
+            https://github.com/JasonTrapp12/pips-solver
+          </Link>
         </Typography>
       </DialogContent>
     </Dialog>
